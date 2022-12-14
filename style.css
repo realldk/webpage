@@ -1,27 +1,56 @@
-.a11y-hidden {
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    z-index: -1;
-    clip: rect(1px, 1px, 1px, 1px);
+@import url(./normalize.css);
+@import url(./reset.css);
+
+* {
+    font-family: Gt american
 }
 
+/* 루트값 */
+
+html {
+    font-size: 10px;
+}
+
+/* 링크 스타일 */
 a {
     text-decoration: none;
     color: inherit;
 }
 
-.group1 {
-    width: 240px;
+/* 헤더 */
+
+.header {
+    background-color: #000;
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
 }
 
-.validation-list a {
-    background: #ccc linear-gradient(to bottom, #ccc, #eee);
-    display: block;
-    padding: 8px 15px 8px 40px;
+.home-menu {
+    color: #fff;
+    display: flex;
+    gap: 30px;
+    align-self: center;
 }
 
-.validation-list a:hover, a:focus {
-    color: red;
+.member {
+    display: flex;
+    gap: 15px;
+    height: 50px;
+}
+
+.request {
+    color: #fff;
+    background-color: #212121;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 13px 20px 15px;
+}
+
+.sign {
+    color: #fff;
+    background-color: #4C5FD5;
+    border-radius: 5px;
+    padding: 13px 34px 15px;
 }
