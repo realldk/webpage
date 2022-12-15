@@ -1,26 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abstract</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract</title>
+  <link rel="stylesheet" href="./style/style.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="home-menu">
-            <img src="" alt="" />
-            <h2 class="Abstract" title="Go to qoabstract.com"><a href="/">Abstract</a></h2>
-            <h1 class="help-center" title="home"><a href="/">Help Center</a></h1>
-        </div>
-        <div class="member">
-            <button class="request">Submit a request</button>
-            <button class="sign">Sign in</button>
-        </div>
-        <input type="text" />
-    </header>
-    <main>
-    </main>
+  <header class="header">
+    <div class="header-bar">
+      <div class="home-menu">
+        <img src="./image/logo.png" alt="" />
+        <h2 class="Abstract" title="Go to qoabstract.com"><a href="/">Abstract</a></h2>
+        <h1 class="help-center" title="home"><a href="/">Help Center</a></h1>
+      </div>
+      <div class="member">
+        <button class="request">Submit a request</button>
+        <button class="sign">Sign in</button>
+      </div>
+    </div>
+    <div class="search-bar">
+      <h2 class="a11y-hidden">search</h2>
+      <p>How can we help?</p>
+      <form action="/" class="search-form">
+        <fieldset>
+          <legend>search</legend>
+          <label for="search" class="a11y-hidden">search</label>
+          <input type="search" id="search" class="form-input" required placeholder="search"/>
+        </fieldset>
+      </form>
+    </div>
+  </header>
+  <main>
+    <div class="section-collection">
+      <section class="section-use">
+        <dl class="howtouse">
+          <dt>Using Abstract</dt>
+          <dd><img src="./image/branches.png" alt="" /></dd>
+          <dd>Abstract lets you manage, version, and document your designs in one place.</dd>
+          <dd><a href="/">Learn More →</a></dd>
+        </dl>
+      </section>
+      <section class="section-account">
+        <dl class="manage-account">
+          <dt>Manage your account</dt>
+          <dd><img src="./image/account.png" alt="" /></dd>
+          <dd>Configure your account settings, such as your email, profile details, and password.</dd>
+          <dd><a href="/">Learn More →</a></dd>
+        </dl>
+      </section>
+      <section class="section-group">
+        <dl class="manage-group">
+          <dt>Manage organizations, teams, and projects</dt>
+          <dd><img src="./image/organization.png" alt="" /></dd>
+          <dd>Use Abstract organizations, teams, and projects to organize your people and your work</dd>
+          <dd><a href="/">Learn More →</a></dd>
+        </dl>
+      </section>
+      <section class="section-billing">
+        <dl class="manage-billing">
+          <dt>Manage billing</dt>
+          <dd><img src="./image/billing.png" alt="" /></dd>
+          <dd>Change subscriptions and payment details.</dd>
+          <dd><a href="/">Learn More →</a></dd>
+        </dl>
+      </section>
+      <section class="section-auth">
+        <dl class="auth">
+          <dt>Authenticate to Abstract</dt>
+          <dd><img src="./image/authenticate.png" alt="" /></dd>
+          <dd>Set up and configure SSO, SCIM, and Just-in-Time provisioning.
+          <dd><a href="/">Learn More →</a></dd>
+        </dl>
+      </section>
+      <section class="section-support">
+        <dl class="support">
+          <dt>Abstract support</dt>
+          <dd><img src="./image/support.png" alt="" /></dd>
+          <dd>Get in touch with a human.</dd>
+          <dd><a href="/">Learn More →</a></dd>
+        </dl>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    
+  </footer>
 </body>
 </html>

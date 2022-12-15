@@ -1,0 +1,59 @@
+@import url(./normalize.css);
+@import url(./reset.css);
+
+* {
+  font-family: Gt american
+}
+
+/* 루트값 */
+
+html {
+  font-size: 10px;
+}
+
+/* 링크 스타일 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 헤더 */
+
+.header {
+  font-size: 1.7rem;
+}
+
+.header-bar {
+  padding: 20px 120px;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;  
+}
+
+.home-menu {
+  color: #fff;
+  display: flex;
+  gap: 30px;
+  align-self: center;
+}
+
+.member {
+  display: flex;
+  gap: 15px;
+  height: 50px;
+}
+
+.request {
+  color: #fff;
+  background-color: #212121;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 13px 20px 15px;
+}
+
+.sign {
+  color: #fff;
+  background-color: #4C5FD5;
+  border-radius: 5px;
+  padding: 13px 34px 15px;
+}
