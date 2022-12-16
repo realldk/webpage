@@ -1,8 +1,18 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 
+/* 숨김 콘텐츠 */
+.a11y-hidden, legend{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
 * {
-  font-family: Gt american
+  font-family: Gt american;
+  box-sizing: border-box;
 }
 
 /* 루트값 */
@@ -20,27 +30,41 @@ a {
 /* 헤더 */
 
 .header {
-  font-size: 1.7rem;
+  font-size: 24px;
 }
 
+/* 헤더바 */
 .header-bar {
-  padding: 20px 120px;
   background-color: #000;
+  padding: 16px 103px 15px;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
+  align-items: center;  
 }
 
 .home-menu {
   color: #fff;
   display: flex;
-  gap: 30px;
-  align-self: center;
+  align-items: center;
+}
+
+.header-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.abstract {
+  padding: 0 13px 4px 8px;
+}
+
+.help-center {
+  border-left: 2px solid #fff;
+  padding:0 0 4px 13px;
 }
 
 .member {
   display: flex;
   gap: 15px;
-  height: 50px;
 }
 
 .request {
@@ -48,12 +72,92 @@ a {
   background-color: #212121;
   border: 1px solid #fff;
   border-radius: 5px;
-  padding: 13px 20px 15px;
+  padding: 6px 22px;
 }
 
 .sign {
   color: #fff;
   background-color: #4C5FD5;
   border-radius: 5px;
-  padding: 13px 34px 15px;
+  border: 1px solid #4C5FD5;
+  padding: 6px 24px;
+}
+
+/* 검색 칸 */
+.search-bar {
+  background: #dadbf1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  padding: 80px 30px 115px;
+  font-size: 80px;
+}
+
+.form-input {
+  margin-top: 16px;
+  font-size: 20px;
+  padding: 16px;
+  width: 720px;
+  border-radius: 4px;
+}
+
+/* 메인 섹션*/
+
+.section-collection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 144px 192px 166px 273px;
+  font-size: 24px;
+}
+
+.section-collection a{
+  color: #4C5FD5;
+}
+
+.section-collection [class*="section"] {
+  width: 50%;
+}
+
+.section-collection dl{
+  padding: 0 0 100px 120px;
+  position: relative;
+}
+
+.section-collection img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section-collection dt{
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.add-explanation {
+  margin-bottom: 20px;
+}
+
+/* 푸터 */
+
+.footer {
+  background: #000;
+  color: #fff;
+}
+
+.footer-menu {
+  display: flex;
+  justfy-content
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer-list {
+  font-size: 16px;
 }
