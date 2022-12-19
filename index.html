@@ -11,13 +11,15 @@
   <header class="header">
     <div class="header-bar">
       <div class="home-menu">
-        <img class="header-logo" src="./image/logo.png" alt="" />
-        <h2 class="abstract" title="Go to qoabstract.com"><a href="/">Abstract</a></h2>
+        <a href="/" class="abstract-a">
+          <img class="header-logo" src="./image/logo.png" alt="" />
+          <h2 class="abstract" title="Go to qoabstract.com">Abstract</h2>
+        </a>
         <h1 class="help-center" title="home"><a href="/">Help Center</a></h1>
       </div>
       <div class="member">
-        <button class="request">Submit a request</button>
-        <button class="sign">Sign in</button>
+        <a href="" class="request">Submit a request</a>
+        <a href="" class="sign">Sign in</a>
       </div>
     </div>
     <div class="search-bar">
@@ -27,7 +29,7 @@
         <fieldset>
           <legend>search</legend>
           <label for="search" class="a11y-hidden">search</label>
-          <input type="search" id="search" class="form-input" required placeholder="Search"/>
+          <input type="search" id="search" required placeholder="Search"/>
         </fieldset>
       </form>
     </div>
@@ -35,51 +37,57 @@
   <main>
     <div class="section-collection">
       <section class="section-use">
+        <h2 class="a11y-hidden">Using Abstract</h2>
         <dl class="howtouse">
           <dt>Using Abstract</dt>
           <dd><img src="./image/branches.png" alt="" /></dd>
           <dd class="add-explanation">Abstract lets you manage, version, and document your designs in one place.</dd>
-          <dd><a href="/">Learn More →</a></dd>
+          <dd><a href="/">Learn More &rarr;</a></dd>
         </dl>
       </section>
       <section class="section-account">
+        <h2 class="a11y-hidden">Manage your account</h2>
         <dl class="manage-account">
           <dt>Manage your account</dt>
           <dd><img src="./image/account.png" alt="" /></dd>
           <dd class="add-explanation">Configure your account settings, such as your email, profile details, and password.</dd>
-          <dd><a href="/">Learn More →</a></dd>
+          <dd><a href="/">Learn More &rarr;</a></dd>
         </dl>
       </section>
       <section class="section-group">
+        <h2 class="a11y-hidden">Manage organizations, teams, and projects</h2>
         <dl class="manage-group">
           <dt>Manage organizations, teams, and projects</dt>
           <dd><img src="./image/organization.png" alt="" /></dd>
           <dd class="add-explanation">Use Abstract organizations, teams, and projects to organize your people and your work</dd>
-          <dd><a href="/">Learn More →</a></dd>
+          <dd><a href="/">Learn More &rarr;</a></dd>
         </dl>
       </section>
       <section class="section-billing">
+        <h2 class="a11y-hidden">Manage billing</h2>
         <dl class="manage-billing">
           <dt>Manage billing</dt>
           <dd><img src="./image/billing.png" alt="" /></dd>
           <dd class="add-explanation">Change subscriptions and payment details.</dd>
-          <dd><a href="/">Learn More →</a></dd>
+          <dd><a href="/">Learn More &rarr;</a></dd>
         </dl>
       </section>
       <section class="section-auth">
+        <h2 class="a11y-hidden">Authenticate to Abstract</h2>
         <dl class="auth">
           <dt>Authenticate to Abstract</dt>
           <dd><img src="./image/authenticate.png" alt="" /></dd>
           <dd class="add-explanation">Set up and configure SSO, SCIM, and Just-in-Time provisioning.
-          <dd><a href="/">Learn More →</a></dd>
+          <dd><a href="/">Learn More &rarr;</a></dd>
         </dl>
       </section>
       <section class="section-support">
+        <h2 class="a11y-hidden">Abstract support</h2>
         <dl class="support">
           <dt>Abstract support</dt>
           <dd><img src="./image/support.png" alt="" /></dd>
           <dd class="add-explanation">Get in touch with a human.</dd>
-          <dd><a href="/">Learn More →</a></dd>
+          <dd><a href="/">Learn More &rarr;</a></dd>
         </dl>
       </section>
     </div>
@@ -121,16 +129,16 @@
           <li><a href="/">Legal</a></li>
           <li>
             <address class="address">
-              <span>Contact Us</span>
-              <span>info@abstract.com</span>
+              <div class="contact-us">Contact Us</div>
+              <div><a href="/">info@abstract.com</a></div>
             </address>
           </li>
         </ul>
       </li>
     </ul>
-    <small>
+    <small class="small">
       <img src="./image/logo.png" alt="" />
-      Copyright 2022 <br /> Abstract Studio Design, Inc. <br /> All rights reserved
+      &copy; Copyright 2022 <br /> Abstract Studio Design, Inc. <br /> All rights reserved
     </small>
   </footer>
 </body>

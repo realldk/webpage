@@ -48,18 +48,33 @@ a {
   align-items: center;
 }
 
+.abstract-a {
+  display: flex;
+  align-items: center;
+  transition: opacity 300ms 0ms;
+}
+
+.abstract-a:hover, .abstract-a:focus {
+  opacity: 0.8;
+}
 .header-logo {
   width: 32px;
   height: 32px;
 }
 
 .abstract {
+  display: block;
   padding: 0 13px 4px 8px;
 }
 
 .help-center {
+  display: inline-block;
   border-left: 2px solid #fff;
   padding:0 0 4px 13px;
+}
+
+.help-center:hover {
+  text-decoration: underline;
 }
 
 .member {
@@ -72,7 +87,7 @@ a {
   background-color: #212121;
   border: 1px solid #fff;
   border-radius: 5px;
-  padding: 6px 22px;
+  padding: 4px 22px 6px;
 }
 
 .sign {
@@ -80,7 +95,13 @@ a {
   background-color: #4C5FD5;
   border-radius: 5px;
   border: 1px solid #4C5FD5;
-  padding: 6px 24px;
+  padding: 4px 24px 6px;
+  transition: background-color 400ms 0ms, color 400ms 0ms;
+}
+
+.sign:hover, .sign:focus {
+  background-color: #fff;
+  color: black;
 }
 
 /* 검색 칸 */
@@ -95,12 +116,29 @@ a {
   font-size: 80px;
 }
 
-.form-input {
+.search-bar p {
+  letter-spacing: 0px;
+}
+
+#search {
   margin-top: 16px;
   font-size: 20px;
-  padding: 16px;
+  padding: 16px 16px 18px 16px;
   width: 720px;
+  border: 1px solid #000;
   border-radius: 4px;
+  line-height: 1;
+  outline: none;
+  background-image: url(../image/right-arrow-alt-regular-24black.png);
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  transition: background-image 300ms 0ms, border 300ms 0ms;
+  box-shadow: 2px 3px 10px #4C5FD5;
+}
+
+#search:hover, #search:focus {
+  background-image: url(../image/right-arrow-alt-regular-24.png);
+  border: 1px solid #4C5FD5;
 }
 
 /* 메인 섹션*/
@@ -109,7 +147,7 @@ a {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 144px 192px 166px 273px;
+  padding: 144px 192px 144px 220px;
   font-size: 24px;
 }
 
@@ -141,23 +179,58 @@ a {
   margin-bottom: 20px;
 }
 
+section a:hover, section a:focus {
+  text-decoration: underline;
+}
+
 /* 푸터 */
 
 .footer {
   background: #000;
   color: #fff;
+  padding: 3% 12% 3% 6%;
+  height: 440px;
+  position: relative;
 }
 
 .footer-menu {
   display: flex;
-  justfy-content
+  justify-content: space-between;
+  margin-right: 25%;
 }
 
 .footer-title {
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 25px;
 }
 
 .footer-list {
   font-size: 16px;
+  font-weight: 550;
+}
+
+.footer-list a:hover, .footer-list a:focus {
+  text-decoration: underline;
+}
+
+.address {
+  margin-top: 38px;
+  font-size: 16px;
+}
+
+.contact-us{
+  font-weight: 700;
+}
+
+.small {
+  position: absolute;
+  right: 6%;
+  bottom: 18%;
+  font-size: 20px;
+}
+
+.small img {
+  display: block;
+  margin-bottom: 25px;
 }
